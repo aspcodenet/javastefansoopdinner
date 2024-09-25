@@ -10,6 +10,11 @@ public class App {
         stefan.setLevel(1);
         middagsBord.add(stefan);
 
+        stefan.act();
+        stefan.act();
+        stefan.act();
+
+
         Person kerstin = new Person();
         kerstin.setName("Kerstin");
         kerstin.setLevel(1);
