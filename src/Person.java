@@ -4,12 +4,31 @@ public class Person {
     private String name;
     private  int level;
 
+    private String lastAction = "";
+    private String secondLastAction = "";
+    //private int antalBurpsInARow = 0;
+    public void mightLevelUp(){
+        // if(antalBurpsInARow == 2){
+        //     level++;
+        // }
+        if(lastAction.equals("rapar") && secondLastAction.equals("rapar")){
+            level++;
+        }
+    }
+
     public void act(){
         String[] actions = {"äter", "rapar", "pratar", "dricker"};
 
         int rnd = new Random().nextInt(actions.length);
 
         String selectedAction = actions[rnd];
+        // if(selectedAction.equals("rapar")){
+        //     antalBurpsInARow++;
+        // }else{
+        //     antalBurpsInARow = 0;
+        // }
+        secondLastAction=lastAction;
+        lastAction = selectedAction;
 
         System.out.println( name + " " + selectedAction);
     }

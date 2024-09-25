@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 public class App {
@@ -25,6 +24,10 @@ public class App {
         while(true){
             for (Person person : middagsBord) {
                 person.act();
+                person.mightLevelUp();
+            }
+            for (Person person : middagsBord) {
+                System.out.println(person.getName() + " " + person.getLevel() );
             }
             System.out.println("Tryck enter för nästa omgång i spelet");
             System.console().readLine();
