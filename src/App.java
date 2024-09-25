@@ -26,6 +26,8 @@ public class App {
             for (Person person : middagsBord) {
                 person.act();
             }
+            System.out.println("Tryck enter för nästa omgång i spelet");
+            System.console().readLine();
         }
 
  
