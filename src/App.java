@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class App {
     public static void main(String[] args) throws Exception {
-
+        // HEJ HEJ
         ArrayList<Person> middagsBord = new ArrayList<>();
 
         Person stefan = new Person("Stefan");
