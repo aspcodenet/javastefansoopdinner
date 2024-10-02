@@ -4,6 +4,11 @@ public class Person {
     private String name;
     private  int level;
 
+    public Person(String name){
+        this.name = name;
+        level = 1;
+    }
+
     private String lastAction = "";
     private String secondLastAction = "";
     //private int antalBurpsInARow = 0;
@@ -43,6 +48,9 @@ public class Person {
         return level;
     }
     public void setLevel(int level) {
+        if(level < 0 || level > 100){
+            throw new IllegalArgumentException("Felaktigt värde");
+        }
         this.level = level;
     }
 
