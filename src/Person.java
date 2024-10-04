@@ -1,11 +1,10 @@
 import java.util.Random;
 
-public class Person {
-    private String name;
+public class Person extends GameObject {
     private  int level;
 
     public Person(String name){
-        this.name = name;
+        super(name);
         level = 1;
     }
 
@@ -35,15 +34,9 @@ public class Person {
         secondLastAction=lastAction;
         lastAction = selectedAction;
 
-        System.out.println( name + " " + selectedAction);
+        System.out.println( getName() + " " + selectedAction);
     }
 
-    public String getName() {
-        return name;
-    }
-    public void setName(String name) {
-        this.name = name;
-    }
     public int getLevel() {
         return level;
     }
