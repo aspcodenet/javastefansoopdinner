@@ -1,14 +1,12 @@
-public class GameObject {
+public abstract class GameObject {
     private String name;
 
     public GameObject(String name){
         this.name = name;
     }
 
-    public void act(){
-
-    }
-
+    public abstract  void act();
+    
     public void mightLevelUp(){
         
     }

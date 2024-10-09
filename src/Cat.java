@@ -1,24 +1,19 @@
 import java.util.Random;
 
-public class Fly extends GameObject {
- 
-    public Fly(String name){
+public class Cat extends GameObject {
+    public Cat(String name){
         super(name);
     }
 
-    public void mightLevelUp(){
-    }
-
     @Override
-    public void act(){
-        String[] actions = {"flyga runt", "surra", "landa i maten"};
+    public void act() {
+        String[] actions = {"jamar", "är sur", "vill gå ut"};
 
         int rnd = new Random().nextInt(actions.length);
 
         String selectedAction = actions[rnd];
         System.out.println( getName() + " " + selectedAction);
-    }
 
- 
-      
+    }
+    
 }

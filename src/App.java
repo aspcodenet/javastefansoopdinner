@@ -12,6 +12,27 @@ public class App {
 
 
 
+        // UPPTÄCKT : 
+        // programmering är mer än att lösa ett problem här och nu
+        // LÖS PROBLEMET SÅ ATT DET INTE BLIR ANDRA PROBLEM I FRAMTIDEN
+
+
+        // 1. Vi skriver INTE all kod själva. 
+        // dom som bygger en klass måste säkerställa 
+        //    valid state (getters/setters/consatructors)
+        //    att man inte använder klassen på fel sätt!
+
+        // ABSTRACT = kan inte instansiera
+        // abstract class - KAN INTE new:a den
+        // abstract method - MÅSTE IMPLEMENTERA VISSA METODER I SUBCLASSEN 
+
+        // FÖR ATT MINSKA RISKEN ATT NÅN PROGRAMMERAR FEL - 
+
+        // @Override betyder INGENTING
+
+        
+
+
         // HEJ HEJ
         //test
         ArrayList<GameObject> middagsBord = new ArrayList<>();
@@ -19,6 +40,13 @@ public class App {
         Person stefan = new Person("Stefan");
         stefan.setLevel(1);
         middagsBord.add(stefan);
+
+        Cat cat = new Cat("Musse");
+        middagsBord.add(cat);
+
+
+        // GameObject obj = new GameObject("sdadasasd"); // new Däggdjur
+        // middagsBord.add(obj);
 
 
         Person kerstin = new Person("Kerstin");

@@ -20,6 +20,7 @@ public class Person extends GameObject {
         }
     }
 
+    @Override
     public void act(){
         String[] actions = {"äter", "rapar", "pratar", "dricker"};
 
